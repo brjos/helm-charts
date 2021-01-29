@@ -1,0 +1,28 @@
+categories:
+- JMS
+- ActiveMQ
+- Message Queue
+questions:
+- variable: defaultImage
+  default: true
+  description: "Use default Docker images"
+  label: Use Default Images
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: statefulset.image.registry
+    default: "docker.io"
+    description: "ActiveMQ image registry"
+    type: string
+    label: Image Registry
+  - variable: statefulset.image.repository
+    default: "rmohr/activemq"
+    description: "ActiveMQ image name"
+    type: string
+    label: Image Name
+  - variable: statefulset.image.tag
+    default: "5.11.1"
+    description: "ActiveMQ image tag"
+    type: string
+    label: Image Tag

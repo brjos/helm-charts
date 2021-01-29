@@ -1,0 +1,30 @@
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+# Ansible retry files
+*.retry
+
+# exclude compiled python files
+*.pyc
+
+# Ansible Vault password file
+.vault_pass
+
+# packages
+*/packages
+*/charts
+*/Chart.lock
+
+# VisualStudioCode
+.vscode
+
+# local values
+*/local-values.yaml
