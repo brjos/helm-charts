@@ -2,6 +2,8 @@
 /charts/*/charts
 /charts/*/requirements.lock
 /charts/*/Chart.lock
+# README.md are autocreated by github docs workflow
+/charts/*/README.md
 
 # Swap
 [._]*.s[a-v][a-z]
