@@ -124,6 +124,7 @@ statefulset:
 
   ## Amount of Replicas
   # statefulset.replicaCount -- Amount of Replicas deployed
+  # only 1 allowed at the moment
   replicaCount: 1
 
   ## Statefulset Pod Management Policy

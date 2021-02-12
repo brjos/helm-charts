@@ -21,6 +21,8 @@ limitations under the License.
 resources:
   - type: "statefulset"
     values: {{ toYaml $.Values.statefulset | nindent 6 }}
+    overwrites:
+      replicaCount: 1
   - type: "service"
     values: {{ toYaml $.Values.service | nindent 6 }}
   - type: "persistentVolumeClaim"

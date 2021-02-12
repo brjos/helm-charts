@@ -26,3 +26,8 @@ questions:
     description: "ActiveMQ image tag"
     type: string
     label: Image Tag
+- variable: timezone
+  description: "Define Container Timezone (Sets TZ Environment)"
+  default: "Europe/Zurich"
+  label: timezone
+  type: string
