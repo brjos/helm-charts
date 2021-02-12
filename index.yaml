@@ -3,6 +3,31 @@ entries:
   activemq:
   - apiVersion: v2
     appVersion: 5.11.1
+    created: "2021-02-12T13:15:04.540749502Z"
+    dependencies:
+    - name: manifests
+      repository: https://bedag.github.io/helm-charts/
+      version: 0.5.1
+    description: A Helm chart for ActiveMQ
+    digest: 22f266eec432f42e7e6f48d0e887a5114d81c4712189b7860674aab8586a280e
+    home: https://activemq.apache.org/
+    icon: https://activemq.apache.org/assets/img/activemq_logo_black_small.png
+    keywords:
+    - activemq
+    maintainers:
+    - email: bruno.jost@bedag.ch
+      name: Bruno Jost
+    - email: sre@bedag.ch
+      name: SRE
+    name: activemq
+    sources:
+    - https://www.github.com/rmohr/docker-activemq
+    type: application
+    urls:
+    - https://github.com/brjos/helm-charts/releases/download/activemq-0.2.0/activemq-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 5.11.1
     created: "2021-01-29T15:46:42.877076045Z"
     dependencies:
     - name: manifests
