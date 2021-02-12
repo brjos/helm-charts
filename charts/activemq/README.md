@@ -2,7 +2,7 @@
 
 :warning: **this chart is not production ready - its purpose is only for local or dev scenarios!**
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.11.1](https://img.shields.io/badge/AppVersion-5.11.1-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.11.1](https://img.shields.io/badge/AppVersion-5.11.1-informational?style=flat-square)
 
 A Helm chart for ActiveMQ
 
@@ -23,7 +23,7 @@ A Helm chart for ActiveMQ
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bedag.github.io/helm-charts/ | manifests | 0.4.9 |
+| https://bedag.github.io/helm-charts/ | manifests | 0.5.1 |
 
 ## Values
 
@@ -96,7 +96,7 @@ A Helm chart for ActiveMQ
 | statefulset.ports | list | `[{"containerPort":61616,"name":"activemq","protocol":"TCP"}]` | Configure Container Ports |
 | statefulset.priorityClassName | string | `""` | Pod [priorityClassName](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priorityclass) |
 | statefulset.readinessProbe | object | `{}` | Container [ReadinessProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes) |
-| statefulset.replicaCount | int | `1` | Amount of Replicas deployed |
+| statefulset.replicaCount | int | `1` | Amount of Replicas deployed only 1 allowed at the moment |
 | statefulset.resources | object | `{}` | Configure Container [Resource](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) |
 | statefulset.restartPolicy | string | `nil` | Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default to Always. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy |
 | statefulset.rollingUpdatePartition | string | `""` | Statefulset [Update Pratition](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#partitions). **Statefulset only** |
